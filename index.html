@@ -4,23 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oops! Maintenance</title>
-    <link rel="shortcut icon" href="./img/ieg.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/ieg.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <style>
-        body { background-color: black; text-align: center; padding: 150px; }
-        h1 { font-size: 50px; }
-        body { font: 20px Helvetica, sans-serif; color: #fff; }
-        article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-        a { color: rgb(4, 122, 254); text-decoration: none; }
-        a:hover { color: #333; text-decoration: none; }
-      </style>
-      
-      <article>
-          <h1>We&rsquo;ll be back soon!</h1>
-          <div>
-              <p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always <a href="https://mail.google.com/mail/u/0/?fs=1&to=ibrahimelgibran17@gmail.com&su=Your%20Subject&body=Your%20Messages&tf=cm">contact us</a>, otherwise we&rsquo;ll be back online shortly!</p>
-              <p>&mdash; IegcodeTube. </p>
-          </div>
-      </article>
+      body {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Helvetica, sans-serif;
+        color: #fff;
+      }
+
+      article {
+        text-align: left;
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 20px; /* Added padding for better mobile view */
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      a {
+        color: rgb(4, 122, 254);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #333;
+        text-decoration: underline;
+      }
+
+      @media screen and (max-width: 600px) {
+        body {
+          padding: 20px;
+        }
+
+        article {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>We&rsquo;ll be back soon!</h1>
+      <div>
+        <p>
+          Sorry for the inconvenience, but we&rsquo;re performing some
+          maintenance at the moment. If you need to, you can always
+          <a
+            href="https://mail.google.com/mail/u/0/?fs=1&to=ibrahimelgibran17@gmail.com&su=Your%20Subject&body=Your%20Messages&tf=cm"
+            >contact us</a
+          >. Otherwise, we&rsquo;ll be back online shortly!
+        </p>
+        <p>&mdash; IegcodeTube.</p>
+      </div>
+    </article>
   </body>
 </html>
